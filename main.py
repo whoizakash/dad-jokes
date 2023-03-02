@@ -5,7 +5,11 @@ from termcolor import colored
 
 header = figlet_format("DAD JOKE 3000")
 
-header = colored(header, color='magenta')
+ran_color = ( 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white',
+            'light_grey', 'dark_grey', 'light_red', 'light_green', 'light_yellow', 'light_blue',
+            'light_magenta', 'light_cyan')
+
+header = colored(header, color=choice(ran_color))
 print(header)
 
 user_input = input("What would you like to search for? ")
